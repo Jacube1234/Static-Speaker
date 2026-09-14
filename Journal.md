@@ -22,6 +22,8 @@ Today I worked on getting my project files backed up on GitHub using GitHub Desk
 
 I ran into some folder issues at first because the app was tracking unrelated programming files. Now everything is organized cleanly and saved online.
 
+![Markdown writting](assets/12.9.png)
+
 ### Time Spent: 1.5 Hours
 
 ## 14 September 2026 - Integrating the Bluetooth Module & Audio Mixing
@@ -32,10 +34,11 @@ I downloaded a custom library from GitHub so the component shows up as a proper 
 
 With some AI help, I added a 1kΩ resistor to every single audio output line coming from both the Bluetooth module and the FM radio chip. This means `R_MIX` and `L_MIX` connect with any issues, preventing the 2 different paths (Bluetooth and the radio chips) from screwing each other over.
 
-![Screenshot of my early KiCad schematic progress](assets/14.9.png)
+![Finished schematic](assets/14.9 Schematic.png)
 
+Placed components in a layout. Generally placed them going left to right based on how the power travels through the circui like the amplifier components next to each other etc.
 
-### Time Spent: 2 Hours
+### Time Spent: 4 Hours
 
 
 
