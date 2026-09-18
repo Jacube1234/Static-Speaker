@@ -693,6 +693,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Static_Symbol_Library:PJ-3200"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -846,7 +945,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "PJ-3200_1_1"
+				(pin passive line
 					(at 6.35 -1.27 180)
 					(length 5.08)
 					(name "2"
@@ -864,7 +965,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 1.27 180)
 					(length 5.08)
 					(name "3"
@@ -882,7 +983,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 -3.81 180)
 					(length 5.08)
 					(name "4"
@@ -2534,145 +2635,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 121.92 41.275)
@@ -2700,7 +2662,7 @@
 	)
 	(rectangle
 		(start 205.74 87.63)
-		(end 259.08 140.97)
+		(end 259.08 121.285)
 		(stroke
 			(width 0)
 			(type default)
@@ -2734,6 +2696,18 @@
 		)
 		(uuid "b51358e4-6348-4f0d-a9bf-cb6b03032d35")
 	)
+	(rectangle
+		(start 205.74 121.285)
+		(end 259.08 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ddd7402c-c8d0-438f-8a73-80b75246495d")
+	)
 	(text "Audio amplifier chip"
 		(exclude_from_sim no)
 		(at 130.302 90.678 0)
@@ -2743,6 +2717,16 @@
 			)
 		)
 		(uuid "17bb4bba-0a13-4bfc-a7f4-4d78185a38ae")
+	)
+	(text "Mounting holes"
+		(exclude_from_sim no)
+		(at 232.41 123.952 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5926decb-fc18-4c0c-8fb6-60b58a4b8eb3")
 	)
 	(text "Bluetooth module"
 		(exclude_from_sim no)
@@ -2791,16 +2775,16 @@
 		(uuid "28c4eb4f-52d7-41a6-a02a-6234b47b532f")
 	)
 	(junction
-		(at 160.02 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "332b67a7-f1ca-46d3-a901-180f90f2da22")
-	)
-	(junction
 		(at 92.71 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5428ea3-3363-408f-af13-094ea1446727")
+	)
+	(junction
+		(at 160.02 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2bd7b1d-5c3d-43ab-9e33-baa7574b7a73")
 	)
 	(wire
 		(pts
@@ -3001,6 +2985,16 @@
 			(type default)
 		)
 		(uuid "7ea9c172-0c19-44eb-9458-0b587dae8d38")
+	)
+	(wire
+		(pts
+			(xy 109.22 58.42) (xy 106.68 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fd674fc-f3cd-4b5b-9540-22fdfc129cbf")
 	)
 	(wire
 		(pts
@@ -3376,7 +3370,7 @@
 	)
 	(global_label "L_AMP_OUT"
 		(shape input)
-		(at 234.95 121.92 180)
+		(at 232.41 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3386,7 +3380,7 @@
 		)
 		(uuid "b9816766-6a45-4e4d-a9a3-1ac6e53fb49a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.5629 121.92 0)
+			(at 219.0229 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3448,7 +3442,7 @@
 	)
 	(global_label "R_AMP_OUT"
 		(shape input)
-		(at 234.95 107.95 180)
+		(at 232.41 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3458,7 +3452,7 @@
 		)
 		(uuid "c8dcfca9-ce46-4406-99ad-d47bdd2e2f9b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.321 107.95 0)
+			(at 218.781 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3734,6 +3728,82 @@
 			(project "Radio-Speaker"
 				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 236.22 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11a7193f-b219-4bc1-825c-7c5b0fe541eb")
+		(property "Reference" "H4"
+			(at 238.76 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 238.76 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 236.22 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 236.22 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Radio-Speaker"
+				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -4132,121 +4202,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Static_Symbol_Library:PJ-3200")
-		(at 195.58 68.58 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "251e57a4-f3af-476b-96f0-f3b38454f636")
-		(property "Reference" "CN1"
-			(at 197.74 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PJ-3200"
-			(at 197.74 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Static:AUDIO-TH_PJ-3200"
-			(at 195.58 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2689690.pdf"
-			(at 195.58 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 195.58 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "XKB Connection(中国星坤)"
-			(at 195.58 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PJ-3200"
-			(at 195.58 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C2689690"
-			(at 195.58 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "72bb5851-a4c5-44ce-9f3d-513940fe0e04")
-		)
-		(pin "4"
-			(uuid "8250fe82-b342-4e6a-8273-348b160a10ff")
-		)
-		(pin "3"
-			(uuid "f4c85fb5-ace0-4c41-a837-12837e6628c4")
-		)
-		(instances
-			(project "Radio-Speaker"
-				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
-					(reference "CN1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 132.08 69.85 0)
 		(unit 1)
@@ -4436,6 +4391,82 @@
 			(project "Radio-Speaker"
 				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
 					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 218.44 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "308018ed-8481-46cd-918a-03b52d8fe3b5")
+		(property "Reference" "H1"
+			(at 220.98 126.9999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 220.98 129.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 218.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 218.44 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Radio-Speaker"
+				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -4726,7 +4757,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
+		(lib_id "power:+3V3")
 		(at 160.02 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -4736,7 +4767,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4f792863-0d1f-49e8-89ba-3e99eef53a66")
+		(uuid "47528945-11a1-4b92-b2dc-cb97c82d5efc")
 		(property "Reference" "#PWR08"
 			(at 160.02 101.6 0)
 			(hide yes)
@@ -4748,7 +4779,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3V3"
 			(at 160.02 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4780,7 +4811,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 160.02 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -4792,12 +4823,127 @@
 			)
 		)
 		(pin "1"
-			(uuid "12ec991b-b4b5-42e5-a879-8093f6b8c3f7")
+			(uuid "d5a2121c-a292-4682-8a9d-16f5981d54f1")
 		)
 		(instances
 			(project "Radio-Speaker"
 				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Static_Symbol_Library:PJ-3200")
+		(at 195.58 68.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49ee1739-fd0b-4f12-80b7-28f15f90cd92")
+		(property "Reference" "CN1"
+			(at 197.74 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ-3200"
+			(at 197.74 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Static:AUDIO-TH_PJ-3200"
+			(at 195.58 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2689690.pdf"
+			(at 195.58 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XKB Connection(中国星坤)"
+			(at 195.58 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PJ-3200"
+			(at 195.58 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2689690"
+			(at 195.58 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "80a8e795-80aa-4964-a8a1-f836f73de21d")
+		)
+		(pin "3"
+			(uuid "52fb73cd-8349-4a64-9601-fb42c19bfa60")
+		)
+		(pin "4"
+			(uuid "c6b76f91-0ff8-4237-9932-c7087d5d6f2e")
+		)
+		(instances
+			(project "Radio-Speaker"
+				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
+					(reference "CN1")
 					(unit 1)
 				)
 			)
@@ -5767,7 +5913,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 240.03 121.92 0)
+		(at 237.49 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5778,7 +5924,7 @@
 		(fields_autoplaced yes)
 		(uuid "93f8da35-702a-403f-a259-889991403676")
 		(property "Reference" "J2"
-			(at 242.57 121.9199 0)
+			(at 240.03 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5789,7 +5935,7 @@
 			)
 		)
 		(property "Value" "L_SPK"
-			(at 242.57 124.4599 0)
+			(at 240.03 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5800,7 +5946,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 240.03 121.92 0)
+			(at 237.49 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5811,7 +5957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 121.92 0)
+			(at 237.49 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5822,7 +5968,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 240.03 121.92 0)
+			(at 237.49 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5842,6 +5988,84 @@
 			(project "Radio-Speaker"
 				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 109.22 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94c24af0-a1a3-49a8-98c5-55ce2c963bef")
+		(property "Reference" "#PWR022"
+			(at 109.22 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 109.22 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 109.22 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c9f9dbf1-1620-4dad-9d7a-437e21dbf033")
+		)
+		(instances
+			(project "Radio-Speaker"
+				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -6244,7 +6468,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 234.95 110.49 0)
+		(at 232.41 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6255,7 +6479,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3019e00-234f-412d-83f3-cadcd543de71")
 		(property "Reference" "#PWR017"
-			(at 234.95 116.84 0)
+			(at 232.41 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6266,7 +6490,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.95 115.57 0)
+			(at 232.41 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6276,7 +6500,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 110.49 0)
+			(at 232.41 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6287,7 +6511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 110.49 0)
+			(at 232.41 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6298,7 +6522,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 110.49 0)
+			(at 232.41 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6393,6 +6617,82 @@
 			(project "Radio-Speaker"
 				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 236.22 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db5503c7-fe61-404a-93d5-4d83f2fe9151")
+		(property "Reference" "H2"
+			(at 238.76 126.9999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 238.76 129.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 236.22 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 236.22 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Radio-Speaker"
+				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -6874,7 +7174,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 240.03 107.95 0)
+		(at 237.49 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6885,7 +7185,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3bd4802-0aa9-4ef8-a588-26a444b7a57a")
 		(property "Reference" "J1"
-			(at 242.57 107.9499 0)
+			(at 240.03 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6896,7 +7196,7 @@
 			)
 		)
 		(property "Value" "R_SPK"
-			(at 242.57 110.4899 0)
+			(at 240.03 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6907,7 +7207,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 240.03 107.95 0)
+			(at 237.49 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6918,7 +7218,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 107.95 0)
+			(at 237.49 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6929,7 +7229,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 240.03 107.95 0)
+			(at 237.49 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6956,7 +7256,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 234.95 124.46 0)
+		(at 232.41 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6967,7 +7267,7 @@
 		(fields_autoplaced yes)
 		(uuid "f706c3af-6f3b-4c16-871d-5c0213ba1fca")
 		(property "Reference" "#PWR018"
-			(at 234.95 130.81 0)
+			(at 232.41 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6978,7 +7278,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.95 129.54 0)
+			(at 232.41 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6988,7 +7288,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 124.46 0)
+			(at 232.41 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6999,7 +7299,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 124.46 0)
+			(at 232.41 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7010,7 +7310,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 124.46 0)
+			(at 232.41 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7143,6 +7443,82 @@
 			(project "Radio-Speaker"
 				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 218.44 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff19ab83-2b80-40e8-9a9f-340d58ff8012")
+		(property "Reference" "H3"
+			(at 220.98 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 220.98 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
+			(at 218.44 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 218.44 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Radio-Speaker"
+				(path "/dc36ee6c-201d-4605-aee5-292d738d1236"
+					(reference "H3")
 					(unit 1)
 				)
 			)

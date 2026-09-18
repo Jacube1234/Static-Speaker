@@ -34,12 +34,43 @@ I downloaded a custom library from GitHub so the component shows up as a proper 
 
 With some AI help, I added a 1kΩ resistor to every single audio output line coming from both the Bluetooth module and the FM radio chip. This means `R_MIX` and `L_MIX` connect with any issues, preventing the 2 different paths (Bluetooth and the radio chips) from screwing each other over.
 
-![Finished schematic](assets/14.9 Schematic.png)
+![Schematic](assets/14.9_Schematic.png)
 
 Placed components in a layout. Generally placed them going left to right based on how the power travels through the circui like the amplifier components next to each other etc.
 
+
 ### Time Spent: 4 Hours
 
+## 15 September 2026 - Fixing Schematic
+
+![Schematic](assets/15.9_Schematic.png)
+
+![PCB Layout](assets/15.9_PCB_Layout.png)
+
+Changed VCC to +5V. Powered the XIAO
+
+### Time Spent: 1 Hours
+
+## 16 September 2026
+Re-layed out so the bluetooth is not hanging off the the board. For better mounting to the CAD model. Fixed lots of DRC errors.
+Ensured the Bluetooth module's antenna region remained entirely clear of ground plane fills and traces to protect wireless performance.
+
+
+
+### Time Spent: 3 Hours
+
+## 17 September 2026
+3D Viewer Validation: Inspected the assembled layout in the 3D viewer, confirming clean component seating and physical alignment.
+
+![Schematic](assets/17.9_Schematic.png)
+![Schematic](assets/17.9_PCB_Layout.png)
+
+### Time Spent: 1 Hour
+
+## 18 September 2026
+ Gerber & Drill Export Prep: Configured the plot settings to export a clean production package consisting strictly of copper, solder mask, silkscreen, and board outlines (`Edge.Cuts`).
+
+Started CAD model
 
 
 

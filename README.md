@@ -41,11 +41,11 @@ I chose this project to upgrade the standard kit by replacing the original micro
 
 Schematic
 
-![Schematic](assets/Schematic.png)
+![Schematic](assets/17.9_Finished_Schematic.png)
 
 Layout
 
-![Layout of PCB](assets/Layout.png)
+![Layout of PCB](assets/17.9_PCB_Layout.png)
 
 PCB
 
