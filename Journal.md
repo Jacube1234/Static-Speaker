@@ -96,6 +96,6 @@ For the board export, I configured KiCad's plot settings to generate a clean man
 
 With the PCB layout locked in, I jumped into CAD (Fusion 360). I imported the 3D model of the board and all major offboard components (speakers, volume pots, and control buttons wired through pin connectors) into a hybrid assembly so I could design a custom, snugly-fitted 3D-printable case around the hardware layout with proper screw standoffs and wire routing paths.
 
-![CAD Model](Assets/Fusion_Render.png)
+![CAD Model](Assets/Fusion_Render.PNG)
 
 ### Time Spent: 1.5 Hours
