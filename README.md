@@ -21,22 +21,22 @@ I chose this project to upgrade the standard kit by integrating an M18 Bluetooth
 
 ## CAD Model:
 
-![CAD Model](assets/Fusion_Render.png)
+![CAD Model](Assets/Fusion_Render.PNG)
 
 ## PCB
 
 
 Schematic
 
-![Schematic](assets/17.9_Schematic.png)
+![Schematic](Assets/17.9_Schematic.png)
 
 Layout
 
-![Layout of PCB](assets/17.9_PCB_Layout.png)
+![Layout of PCB](Assets/17.9_PCB_Layout.png)
 
 PCB
 
-![3D Viewer](assets/3D_Viewer.gif)
+![3D Viewer](Assets/3D_Viewer.gif)
 
 
 
@@ -53,17 +53,19 @@ Here should be everything you need to make this speaker
 Most things should be what static sends you except the bluetooth module.
 
 
-- 1x Seeed Xiao RP2040
-- 1x M18 Bluetooth Audio Module
+- 1x Seeed Studio XIAO RP2040
+- 1x MH-M18 Bluetooth Audio Module
 - 1x RDA5807FP FM Radio Tuner Chip
 - 1x TDA2822 Audio Amplifier Chip
-- 1x 10kΩ Potentiometers (Volume Knobs)
-- 4x 1kΩ Resistors (for audio line mixing)
-- 2x PJ-3020 3.5mm Audio Jacks (Speaker outputs)
-- 10uF and 100uF Capacitors
-- 2x Speakers
-- 1x Momentary Push Button (Mode switch)
-- PCB
+- 1x WH148 10kΩ Potentiometer
+- 4x 1kΩ Resistors 
+- 1x 3.5mm Jack (for FM Radio Antenna)
+- 2x 10uF Capacitors
+- 2x 100uF Capacitors
+- 2x 30mm Speakers
+- 1x 12mm Momentary Push Button Mode switch
+- Hookup wire (for off-board connections)
+- 1x Custom PCB
 
 ## Software
 
