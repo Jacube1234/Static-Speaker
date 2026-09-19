@@ -21,6 +21,7 @@ I chose this project to upgrade the standard kit by integrating an M18 Bluetooth
 
 ## CAD Model:
 
+![CAD Model](assets/Fusion_Render.png)
 
 ## PCB
 
