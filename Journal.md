@@ -60,6 +60,10 @@ I also adjusted how the MH-M18 Bluetooth module sits on the edge of the board. I
 
 ## 16 September 2026 - PCB Routing and DRC Clearance
 
+![Errors 1](Assets/Errors_1.png)
+
+![Errors 2](Assets/Errors_2.png)
+
 Today was all about refining the physical board layout and clearing errors. 
 
 I re-laid out parts of the board so the Bluetooth module is securely mounted without awkwardly hanging off, making it much easier to design a solid mechanical enclosure around it later. This led to a bunch of Design Rule Check (DRC) errors—mostly track clearance issues and overlapping silkscreen text. Working through them one by one, I carefully routed traces around the audio lines to prevent electrical noise coupling into the amplifier. I also made extra sure the Bluetooth module's antenna region remained entirely clear of ground plane fills and copper traces to protect wireless performance.
