@@ -10,7 +10,7 @@ I managed to place the original XIAO microcontroller block, the RDA5807 FM radio
 
 I ran into a bit of confusion with the capacitors because I wasn't entirely sure at first whether I needed to pick specific physical footprints or just rename the values (like sorting out the 10uF and 100uF caps). Once I figured out the footprint matching, the next step became clearing up those capacitor values and wrapping up the rest of the core schematic blocks.
 
-![Screenshot of my early KiCad schematic progress](assets/11.9.png)
+![Screenshot of my early KiCad schematic progress](Assets/11.9.png)
 
 ### Time Spent: 2 Hours
 
@@ -22,7 +22,7 @@ Today I worked on getting my project files properly backed up and organised onli
 
 I ran into some folder structure issues at first because the desktop app tried to track unrelated temporary cache files and auto-generated editor backups. I had to set up a clean folder hierarchy (`Firmware`, `PCB`, `Production`) and filter out the clutter. Now everything is cleanly organised into folders for the KiCad project files, the Seeed XIAO code, and the future manufacturing outputs.
 
-![Markdown writting](assets/12.9.png)
+![Markdown writting](Assets/12.9.png)
 
 ### Time Spent: 1.5 Hours
 
@@ -36,7 +36,7 @@ Since the MH-M18 isn't in standard base KiCad libraries, I had to download and l
 
 If you just wire two audio outputs together, they'll short each other out and cause major distortion. With some AI guidance, I designed a passive summing network: I added a 1kΩ resistor to every single audio output line coming from both the Bluetooth module and the RDA5807 FM radio chip. This merges them safely into shared `R_MIX` and `L_MIX` lines before hitting the amplifier, ensuring the two source paths don't mess each other up. Since the volume potentiometers and speakers are mounted offboard, I added clean pin headers and connector pads to route the mixed audio out to them.
 
-![Schematic](assets/14.9_Schematic.png)
+![Schematic](Assets/14.9_Schematic.png)
 
 After that, I started grouping components on the layout editor. I organised them logically from left to right following the natural power and signal flow through the circuit—keeping the amplifier and its power filtering capacitors closely clustered together to minimise noise.
 
@@ -46,9 +46,9 @@ After that, I started grouping components on the layout editor. I organised them
 
 ## 15 September 2026 - Fixing Schematic & Optimising Net Labels
 
-![Schematic](assets/15.9_Schematic.png)
+![Schematic](Assets/15.9_Schematic.png)
 
-![PCB Layout](assets/15.9_PCB_Layout.png)
+![PCB Layout](Assets/15.9_PCB_Layout.png)
 
 Today I cleaned up several power and net label issues. I changed generic VCC labels to an explicit `+5V` net to match the power input requirements and ensure the XIAO gets a clean supply. 
 
@@ -70,15 +70,15 @@ I re-laid out parts of the board so the Bluetooth module is securely mounted wit
 
 ## 17 September 2026 - 3D Viewer Validation
 
-![3D Viewer](assets/3D_viewer.gif)
+![3D Viewer](Assets/3D_viewer.gif)
 
 Today I ran a complete 3D View check to inspect the fully assembled board layout. 
 
 This step is super helpful because it lets you catch physical collisions before spending money on manufacturing. I confirmed clean component seating, verified that the pin headers for the offboard potentiometers, speakers, and push button have enough physical clearance, and checked that everything lines up nicely for a future enclosure fit.
 
 The images below show the final cleaned schematic and layout from yesterday's session that I took today.
-![Schematic](assets/17.9_Schematic.png)
-![PCB Layout](assets/17.9_PCB_Layout.png)
+![Schematic](Assets/17.9_Schematic.png)
+![PCB Layout](Assets/17.9_PCB_Layout.png)
 
 ### Time Spent: 1 Hour
 
@@ -92,6 +92,6 @@ For the board export, I configured KiCad's plot settings to generate a clean man
 
 With the PCB layout locked in, I jumped into CAD (Fusion 360). I imported the 3D model of the board and all major offboard components (speakers, volume pots, and control buttons wired through pin connectors) into a hybrid assembly so I could design a custom, snugly-fitted 3D-printable case around the hardware layout with proper screw standoffs and wire routing paths.
 
-![CAD Model](assets/Fusion_Render.png)
+![CAD Model](Assets/Fusion_Render.png)
 
 ### Time Spent: 1.5 Hours
